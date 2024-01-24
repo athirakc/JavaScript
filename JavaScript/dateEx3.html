@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function month_name(a){
+            let d= new Date(a)
+            return d.toLocaleString("default",{month:"long"})
+        }
+        console.log(month_name(("10/11/2009")));
+        console.log(month_name(("11/13/2014")));
+    </script>
+</body>
+</html>

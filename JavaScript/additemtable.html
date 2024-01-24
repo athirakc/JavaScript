@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp" placeholder="enter id">
+    <input type="text" id="inp1" placeholder="enter name">
+    <button type="button" onclick="add()">Add</button><br><br>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+            </tr>
+        </thead>
+        <tbody id="tb">
+
+        </tbody>
+    </table>
+    <script>
+        function add(){
+            let a=document.getElementById("inp").value
+            let b=document.getElementById("inp1").value
+            let body=document.getElementById("tb").innerHTML+=`<tr><td>${a}</td><td>${b}</td></tr>`
+            inp.value=""
+            inp1.value=""
+        }
+    </script>
+</body>
+</html>

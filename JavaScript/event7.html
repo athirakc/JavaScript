@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a"/>
+    <button onclick="func()" id="a">Click</button>
+    <select name="" id="num"></select>
+    <script>
+       
+        function func(){
+           let a= document.getElementById("a").value
+           for(let i=0;i<=a;i++){
+            let b=document.getElementById("num")
+            b.innerHTML+= `<option>${i}</option>`
+
+           }
+           
+         
+        }
+    </script>
+</body>
+</html>

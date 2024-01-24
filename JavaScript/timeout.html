@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let clr=setInterval(()=>{
+            let im=document.createElement("img")
+            im.setAttribute("src","https://yt3.googleusercontent.com/ytc/APkrFKZWpLj3lN58STzgXLR0yKvtIvc7nOL0iubz9RHKRQ=s900-c-k-c0x00ffffff-no-rj")
+            im.setAttribute("style","height:150px","width:150px")
+            document.body.appendChild(im)
+        },2000)
+
+        setTimeout(() => {
+            clearInterval(clr)
+        }, timeout(3000));
+    </script>
+</body>
+</html>

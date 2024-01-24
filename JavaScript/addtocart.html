@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add To Cart</h1>
+    <input type="text" id="inp">
+    <button type="button" onclick="addtocart()">Add</button>
+    <h4>My Cart Items</h4>
+    <ol id="list"></ol>
+    <script>
+        function addtocart(){
+            let a=document.getElementById("inp").value
+            let b=document.getElementById("list").innerHTML +="<li>"+a+"</li>"
+            inp.value=" " 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">DOM CLASS 1</h1>
+    <p id="para">Good Morning Gyzzz</p>
+    <p class="para">html</p>
+    <input type="text" name="input">
+    <button onclick="func()">Click</button>
+    <script>
+        function func(){
+            // document.getElementById("head").innerHTML="Biriyani"
+            // document.getElementById("para").innerHTML="Have a Nice Day"
+            let a=document.getElementById("head")
+            a.innerHTML="DOM THE GREAT"
+            a.style.color="Red"
+            a.style.backgroundColor="pink"
+            a.style.fontStyle="Italic"
+            document.getElementsByClassName("para")[0].innerHTML="HELLO"
+            let h=document.getElementsByName("input")[0]
+            h.style.backgroundColor="LightBlue"
+            h.placeholder="enter your name"
+        }
+    </script>
+</body>
+</html>

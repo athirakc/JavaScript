@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mark=parseInt(prompt("Enter a mark"))
+        switch(true){
+            case (mark<=100 && mark>=80):
+                document.write("A Grade")                
+                break;
+            case (mark<=79 && mark>=60):
+                document.write("B Grade")                
+                break;
+            case (mark<=59 && mark>=40):
+                document.write("C Grade")                
+                break;
+            case (mark<40):
+                document.write("Fail")                
+                break;
+        }
+    </script>
+</body>
+</html>

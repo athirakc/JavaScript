@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Email : </label>
+        <input type="email" placeholder="Enter Email" id="inp"><br><br>
+        <button onclick="func()">Click</button>
+    </form>
+    <script>
+        function func(){
+            let a=document.getElementById("inp").value
+            let pattern=/^[a-z][\w]+[\@][a-z]{2,5}[\.][a-z]{1,5}$/
+        
+            if(pattern.test(a)==true){
+                alert("Login Successfull")
+            }
+            else{
+                alert("Login Unsuccessfull")
+            }
+        }
+    </script>
+</body>
+</html>

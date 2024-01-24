@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Phone : </label>
+        <input type="text" placeholder="Enter Mobile Number" id="inp"><br><br>
+        <button onclick="func()">Click</button>
+    </form>
+    <script>
+        function func(){
+            let a=document.getElementById("inp").value
+            let pattern=/^[6,9][0-9]{9}$/
+        
+            if(pattern.test(a)==true){
+                alert("Valid")
+            }
+            else{
+                alert("Unvalid")
+            }
+        }
+    </script>
+</body>
+</html>

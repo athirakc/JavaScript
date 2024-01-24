@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function checkInRange(num,start,range) {
+            if(num >= start && num <= range)
+            {
+                document.write("Between the range","<br/>")
+                document.write(" num ",num,"<br/>")
+                document.write(" start ",start,"<br/>")
+                document.write(" range ",range,"<br/>")
+            }
+            else
+            {
+                document.write("Outside the range","<br/>")
+                document.write(" num ",num,"<br/>")
+                document.write(" start ",start,"<br/>")
+                document.write(" range ",range,"<br/>")
+            }
+        }
+        checkInRange(15,11,30) 
+        checkInRange(20,34,51)
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <ul id="unord"></ul> -->
+    <script>
+        fetch('https://fakestoreapi.com/products')
+            // .then(res=>res.json())
+            // .then(json=>console.log(json))
+            .then(a=>a.json())
+            .then(data=>{
+                data.map(e=>{
+                    // let unorderd=document.getElementById("unord")
+                    // let list=document.createElement("li")
+                    let div=document.createElement("div")
+                    let im=document.createElement("img")
+                    div.appendChild(im)
+                    document.body.appendChild(div)
+                    im.setAttribute("src",e.image)
+                    im.style.height="300px"
+                    im.style.width="300px"
+                    div.setAttribute("class","card")
+
+
+
+
+                    // div.style.backgroundColor="pink"
+
+                    // div.innerHTML=e.title+e.id+e.price
+                   
+                    // unorderd.appendChild(im)
+                })
+            })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

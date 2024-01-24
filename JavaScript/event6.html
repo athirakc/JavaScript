@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head"></h1>
+    <script>
+        let a=parseInt(prompt("Enter a number"))
+        let b=parseInt(prompt("Enter a number"))
+        let opp=prompt("enter a symbol")
+        if(opp=="+"){
+            document.getElementById("head").innerHTML=("a + b =",a+b)
+        }
+        else if(opp=="-"){
+            document.getElementById("head").innerHTML=("a - b =",a-b)
+        }
+        else if(opp=="/"){
+            document.getElementById("head").innerHTML=("a / b =",a/b)
+        }
+        else if(opp=="%"){
+            document.getElementById("head").innerHTML=("a % b =",a%b)
+        }
+        else{
+            document.getElementById("head").innerHTML="Enter valid operation"
+        }
+    </script>
+</body>
+</html>

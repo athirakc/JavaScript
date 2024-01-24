@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function func(){
+            let dv=document.createElement("div")
+            let text=document.createTextNode("Login Page")
+            let inp=document.createElement("input")
+            inp.setAttribute("type","text")
+            let btn=document.createElement("button")
+            let btntext=document.createTextNode("Click")
+            btn.appendChild(btntext)
+            dv.appendChild(text)
+            dv.appendChild(inp)
+            dv.appendChild(btn)
+            document.body.appendChild(dv)
+        }
+        func()
+    </script>
+</body>
+</html>

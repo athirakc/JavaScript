@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person(){
+            this.name="Athira"
+            this.innerFunction=()=>{
+                console.log(this.name)
+            }
+            const arrowFunction=()=>this.innerFunction()
+            arrowFunction()
+        }
+        const person1 = new person()
+        person1.innerFunction()
+    </script>
+</body>
+</html>

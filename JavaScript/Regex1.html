@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Name : </label>
+        <input type="text" placeholder="Enter Name" id="inp"><br><br>
+        <button onclick="func()">Click</button>
+    </form>
+    <script>
+        function func(){
+            let a=document.getElementById("inp").value
+            let pattern=/^[A-Z][a-z]+[\s][A-Z]{1,3}$/
+        
+            if(pattern.test(a)==true){
+                alert("Valid Username")
+            }
+            else{
+                alert("Invalid Username")
+            }
+        }
+    </script>
+</body>
+</html>

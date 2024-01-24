@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+           <input type="text" id="va" onkeyup="fun()">
+    <select id="yd" onkeydown="func()"></select>
+    <select id="vi"></select>
+    <script>
+       function fun(){
+        let a=document.getElementById("va").value
+        for(i=0;i<=a;i++){
+        document.getElementById("yd").innerHTML+=<option>${i}</option>
+    }
+}
+        function func(){
+            let b=document.getElementById("yd").value 
+            for(j=0;j<=b;j++){
+            document.getElementById("vi").innerHTML+=<option>${j}</option>
+        }
+    }
+          
+   </script> 
+</body>
+</html>
